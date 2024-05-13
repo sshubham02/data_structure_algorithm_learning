@@ -2,9 +2,9 @@ package mathematics.factorial_number;
 
 public class Solution {
     public static void main(String[] args) {
-        int n = 4;
-        System.out.println("Factorial of n is "+factorialN(n));
-        System.out.println("Factorial of n without recursion is "+factorial(n));
+        int n = 10;
+        System.out.println("Factorial of "+n+" is "+factorialN(n));
+        System.out.println("Factorial of "+n+" without recursion is "+factorial(n));
     }
     //with recursive
     private static int factorialN(int n){
@@ -16,7 +16,7 @@ public class Solution {
     //without recursive function
     private static int factorial(int n){
         int res=1;
-        for(int i=1;i<=n;i++){
+        for(int i=2;i<=n;i++){
             res = res*i;
         }
         return res;
